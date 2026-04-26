@@ -239,8 +239,8 @@ while begat:
                 elif vvod:
                     old_charge = charge
                     charge -= random.uniform(3, 7)
-                    diff = old_charge - charge # Вычисляем, сколько реально отлетело
-                    if hurt_sounds: random.choice(hurt_sounds).play() # Звук из папки hurts
+                    diff = old_charge - charge
+                    if hurt_sounds: random.choice(hurt_sounds).play()
                     shake_end_time = t_now + 0.3
                     floating_texts.append({"text": f"-{diff:.2f}", "x": w - 160, "y": 60, "alpha": 255})
                     
